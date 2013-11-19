@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1621A96F183BB82F008079A2 /* NSManagedObject+RCDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1621A96E183BB82F008079A2 /* NSManagedObject+RCDExtensions.m */; };
+		1621A972183BBE4E008079A2 /* NSPersistentStoreCoordinator+RCDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1621A971183BBE4E008079A2 /* NSPersistentStoreCoordinator+RCDExtensions.m */; };
+		1621A973183BD4AC008079A2 /* NSManagedObject+RCDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1621A96E183BB82F008079A2 /* NSManagedObject+RCDExtensions.m */; };
+		1621A974183BD4AE008079A2 /* NSManagedObjectContext+RCDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 16961C9C183AAD6F003D92FB /* NSManagedObjectContext+RCDExtensions.m */; };
+		1621A975183BD4B1008079A2 /* NSPersistentStoreCoordinator+RCDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1621A971183BBE4E008079A2 /* NSPersistentStoreCoordinator+RCDExtensions.m */; };
+		1621A978183BD65F008079A2 /* NSFetchedResultsController+RCDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1621A977183BD65F008079A2 /* NSFetchedResultsController+RCDExtensions.m */; };
+		1621A979183BD65F008079A2 /* NSFetchedResultsController+RCDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1621A977183BD65F008079A2 /* NSFetchedResultsController+RCDExtensions.m */; };
+		1621A97C183BD7A8008079A2 /* NSPersistentStore+RCDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1621A97B183BD7A8008079A2 /* NSPersistentStore+RCDExtensions.m */; };
+		1621A97D183BD7A8008079A2 /* NSPersistentStore+RCDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1621A97B183BD7A8008079A2 /* NSPersistentStore+RCDExtensions.m */; };
+		168E9B9AF4884D6A81B8FDAA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F56A2454B054E77BEBFC610 /* libPods.a */; };
+		16961C65183AA9FE003D92FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16961C64183AA9FE003D92FB /* Foundation.framework */; };
+		16961C67183AA9FE003D92FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16961C66183AA9FE003D92FB /* CoreGraphics.framework */; };
+		16961C69183AA9FE003D92FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16961C68183AA9FE003D92FB /* UIKit.framework */; };
+		16961C6F183AA9FE003D92FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 16961C6D183AA9FE003D92FB /* InfoPlist.strings */; };
+		16961C71183AA9FE003D92FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16961C70183AA9FE003D92FB /* main.m */; };
+		16961C75183AA9FE003D92FB /* RCDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16961C74183AA9FE003D92FB /* RCDAppDelegate.m */; };
+		16961C78183AA9FE003D92FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16961C76183AA9FE003D92FB /* Main.storyboard */; };
+		16961C7B183AA9FE003D92FB /* RCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16961C7A183AA9FE003D92FB /* RCDViewController.m */; };
+		16961C7D183AA9FE003D92FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16961C7C183AA9FE003D92FB /* Images.xcassets */; };
+		16961C84183AA9FE003D92FB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16961C83183AA9FE003D92FB /* XCTest.framework */; };
+		16961C85183AA9FE003D92FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16961C64183AA9FE003D92FB /* Foundation.framework */; };
+		16961C86183AA9FE003D92FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16961C68183AA9FE003D92FB /* UIKit.framework */; };
+		16961C8E183AA9FF003D92FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 16961C8C183AA9FF003D92FB /* InfoPlist.strings */; };
+		16961C90183AA9FF003D92FB /* ReactiveCoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16961C8F183AA9FF003D92FB /* ReactiveCoreDataTests.m */; };
+		16961C9A183AAD33003D92FB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16961C99183AAD33003D92FB /* CoreData.framework */; };
+		16961C9D183AAD6F003D92FB /* NSManagedObjectContext+RCDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 16961C9C183AAD6F003D92FB /* NSManagedObjectContext+RCDExtensions.m */; };
+		A127F0F23B26465B99270D18 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9718E867ACB4A0DA0E7A960 /* libPods-test.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16961C87183AA9FE003D92FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16961C59183AA9FE003D92FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16961C60183AA9FE003D92FB;
+			remoteInfo = ReactiveCoreData;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C39ACCF1B6B4F5DB3DB8AD6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		1621A96D183BB82F008079A2 /* NSManagedObject+RCDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+RCDExtensions.h"; path = "ReactiveCoreData/NSManagedObject+RCDExtensions.h"; sourceTree = SOURCE_ROOT; };
+		1621A96E183BB82F008079A2 /* NSManagedObject+RCDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+RCDExtensions.m"; path = "ReactiveCoreData/NSManagedObject+RCDExtensions.m"; sourceTree = SOURCE_ROOT; };
+		1621A970183BBE4E008079A2 /* NSPersistentStoreCoordinator+RCDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSPersistentStoreCoordinator+RCDExtensions.h"; path = "ReactiveCoreData/NSPersistentStoreCoordinator+RCDExtensions.h"; sourceTree = SOURCE_ROOT; };
+		1621A971183BBE4E008079A2 /* NSPersistentStoreCoordinator+RCDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSPersistentStoreCoordinator+RCDExtensions.m"; path = "ReactiveCoreData/NSPersistentStoreCoordinator+RCDExtensions.m"; sourceTree = SOURCE_ROOT; };
+		1621A976183BD65F008079A2 /* NSFetchedResultsController+RCDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSFetchedResultsController+RCDExtensions.h"; path = "ReactiveCoreData/NSFetchedResultsController+RCDExtensions.h"; sourceTree = SOURCE_ROOT; };
+		1621A977183BD65F008079A2 /* NSFetchedResultsController+RCDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSFetchedResultsController+RCDExtensions.m"; path = "ReactiveCoreData/NSFetchedResultsController+RCDExtensions.m"; sourceTree = SOURCE_ROOT; };
+		1621A97A183BD7A8008079A2 /* NSPersistentStore+RCDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSPersistentStore+RCDExtensions.h"; path = "ReactiveCoreData/NSPersistentStore+RCDExtensions.h"; sourceTree = SOURCE_ROOT; };
+		1621A97B183BD7A8008079A2 /* NSPersistentStore+RCDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSPersistentStore+RCDExtensions.m"; path = "ReactiveCoreData/NSPersistentStore+RCDExtensions.m"; sourceTree = SOURCE_ROOT; };
+		16961C61183AA9FE003D92FB /* ReactiveCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16961C64183AA9FE003D92FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		16961C66183AA9FE003D92FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		16961C68183AA9FE003D92FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		16961C6C183AA9FE003D92FB /* ReactiveCoreData-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReactiveCoreData-Info.plist"; sourceTree = "<group>"; };
+		16961C6E183AA9FE003D92FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		16961C70183AA9FE003D92FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		16961C72183AA9FE003D92FB /* ReactiveCoreData-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactiveCoreData-Prefix.pch"; sourceTree = "<group>"; };
+		16961C73183AA9FE003D92FB /* RCDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCDAppDelegate.h; sourceTree = "<group>"; };
+		16961C74183AA9FE003D92FB /* RCDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCDAppDelegate.m; sourceTree = "<group>"; };
+		16961C77183AA9FE003D92FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16961C79183AA9FE003D92FB /* RCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCDViewController.h; sourceTree = "<group>"; };
+		16961C7A183AA9FE003D92FB /* RCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCDViewController.m; sourceTree = "<group>"; };
+		16961C7C183AA9FE003D92FB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		16961C82183AA9FE003D92FB /* ReactiveCoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveCoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16961C83183AA9FE003D92FB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		16961C8B183AA9FF003D92FB /* ReactiveCoreDataTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReactiveCoreDataTests-Info.plist"; sourceTree = "<group>"; };
+		16961C8D183AA9FF003D92FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		16961C8F183AA9FF003D92FB /* ReactiveCoreDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveCoreDataTests.m; sourceTree = "<group>"; };
+		16961C99183AAD33003D92FB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		16961C9B183AAD6F003D92FB /* NSManagedObjectContext+RCDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+RCDExtensions.h"; path = "ReactiveCoreData/NSManagedObjectContext+RCDExtensions.h"; sourceTree = SOURCE_ROOT; };
+		16961C9C183AAD6F003D92FB /* NSManagedObjectContext+RCDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+RCDExtensions.m"; path = "ReactiveCoreData/NSManagedObjectContext+RCDExtensions.m"; sourceTree = SOURCE_ROOT; };
+		7F56A2454B054E77BEBFC610 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3DFFE167D414A01BC6BBFB4 /* Pods-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = "<group>"; };
+		D9718E867ACB4A0DA0E7A960 /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16961C5E183AA9FE003D92FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16961C67183AA9FE003D92FB /* CoreGraphics.framework in Frameworks */,
+				16961C69183AA9FE003D92FB /* UIKit.framework in Frameworks */,
+				16961C65183AA9FE003D92FB /* Foundation.framework in Frameworks */,
+				168E9B9AF4884D6A81B8FDAA /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16961C7F183AA9FE003D92FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16961C9A183AAD33003D92FB /* CoreData.framework in Frameworks */,
+				16961C84183AA9FE003D92FB /* XCTest.framework in Frameworks */,
+				16961C86183AA9FE003D92FB /* UIKit.framework in Frameworks */,
+				16961C85183AA9FE003D92FB /* Foundation.framework in Frameworks */,
+				A127F0F23B26465B99270D18 /* libPods-test.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16961C58183AA9FE003D92FB = {
+			isa = PBXGroup;
+			children = (
+				16961C6A183AA9FE003D92FB /* ReactiveCoreData */,
+				16961C89183AA9FE003D92FB /* ReactiveCoreDataTests */,
+				16961C63183AA9FE003D92FB /* Frameworks */,
+				16961C62183AA9FE003D92FB /* Products */,
+				0C39ACCF1B6B4F5DB3DB8AD6 /* Pods.xcconfig */,
+				B3DFFE167D414A01BC6BBFB4 /* Pods-test.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		16961C62183AA9FE003D92FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16961C61183AA9FE003D92FB /* ReactiveCoreData.app */,
+				16961C82183AA9FE003D92FB /* ReactiveCoreDataTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16961C63183AA9FE003D92FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16961C99183AAD33003D92FB /* CoreData.framework */,
+				16961C64183AA9FE003D92FB /* Foundation.framework */,
+				16961C66183AA9FE003D92FB /* CoreGraphics.framework */,
+				16961C68183AA9FE003D92FB /* UIKit.framework */,
+				16961C83183AA9FE003D92FB /* XCTest.framework */,
+				7F56A2454B054E77BEBFC610 /* libPods.a */,
+				D9718E867ACB4A0DA0E7A960 /* libPods-test.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		16961C6A183AA9FE003D92FB /* ReactiveCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				16961C73183AA9FE003D92FB /* RCDAppDelegate.h */,
+				16961C74183AA9FE003D92FB /* RCDAppDelegate.m */,
+				16961C76183AA9FE003D92FB /* Main.storyboard */,
+				16961C79183AA9FE003D92FB /* RCDViewController.h */,
+				16961C7A183AA9FE003D92FB /* RCDViewController.m */,
+				16961C7C183AA9FE003D92FB /* Images.xcassets */,
+				16961C6B183AA9FE003D92FB /* Supporting Files */,
+			);
+			path = ReactiveCoreData;
+			sourceTree = "<group>";
+		};
+		16961C6B183AA9FE003D92FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				16961C6C183AA9FE003D92FB /* ReactiveCoreData-Info.plist */,
+				16961C6D183AA9FE003D92FB /* InfoPlist.strings */,
+				16961C70183AA9FE003D92FB /* main.m */,
+				16961C72183AA9FE003D92FB /* ReactiveCoreData-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		16961C89183AA9FE003D92FB /* ReactiveCoreDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				1621A976183BD65F008079A2 /* NSFetchedResultsController+RCDExtensions.h */,
+				1621A977183BD65F008079A2 /* NSFetchedResultsController+RCDExtensions.m */,
+				1621A96D183BB82F008079A2 /* NSManagedObject+RCDExtensions.h */,
+				1621A96E183BB82F008079A2 /* NSManagedObject+RCDExtensions.m */,
+				16961C9B183AAD6F003D92FB /* NSManagedObjectContext+RCDExtensions.h */,
+				16961C9C183AAD6F003D92FB /* NSManagedObjectContext+RCDExtensions.m */,
+				1621A97A183BD7A8008079A2 /* NSPersistentStore+RCDExtensions.h */,
+				1621A97B183BD7A8008079A2 /* NSPersistentStore+RCDExtensions.m */,
+				1621A970183BBE4E008079A2 /* NSPersistentStoreCoordinator+RCDExtensions.h */,
+				1621A971183BBE4E008079A2 /* NSPersistentStoreCoordinator+RCDExtensions.m */,
+				16961C8F183AA9FF003D92FB /* ReactiveCoreDataTests.m */,
+				16961C8A183AA9FF003D92FB /* Supporting Files */,
+			);
+			path = ReactiveCoreDataTests;
+			sourceTree = "<group>";
+		};
+		16961C8A183AA9FF003D92FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				16961C8B183AA9FF003D92FB /* ReactiveCoreDataTests-Info.plist */,
+				16961C8C183AA9FF003D92FB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16961C60183AA9FE003D92FB /* ReactiveCoreData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16961C93183AA9FF003D92FB /* Build configuration list for PBXNativeTarget "ReactiveCoreData" */;
+			buildPhases = (
+				074504A989544A36B12B17D7 /* Check Pods Manifest.lock */,
+				16961C5D183AA9FE003D92FB /* Sources */,
+				16961C5E183AA9FE003D92FB /* Frameworks */,
+				16961C5F183AA9FE003D92FB /* Resources */,
+				BE162E5BD1E54AB88840DA4D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReactiveCoreData;
+			productName = ReactiveCoreData;
+			productReference = 16961C61183AA9FE003D92FB /* ReactiveCoreData.app */;
+			productType = "com.apple.product-type.application";
+		};
+		16961C81183AA9FE003D92FB /* ReactiveCoreDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16961C96183AA9FF003D92FB /* Build configuration list for PBXNativeTarget "ReactiveCoreDataTests" */;
+			buildPhases = (
+				0DC24B0CEB7A4A918BFAA838 /* Check Pods Manifest.lock */,
+				16961C7E183AA9FE003D92FB /* Sources */,
+				16961C7F183AA9FE003D92FB /* Frameworks */,
+				16961C80183AA9FE003D92FB /* Resources */,
+				22E0AF21359346D58F48F69E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16961C88183AA9FE003D92FB /* PBXTargetDependency */,
+			);
+			name = ReactiveCoreDataTests;
+			productName = ReactiveCoreDataTests;
+			productReference = 16961C82183AA9FE003D92FB /* ReactiveCoreDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16961C59183AA9FE003D92FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RCD;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Autodesk;
+				TargetAttributes = {
+					16961C81183AA9FE003D92FB = {
+						TestTargetID = 16961C60183AA9FE003D92FB;
+					};
+				};
+			};
+			buildConfigurationList = 16961C5C183AA9FE003D92FB /* Build configuration list for PBXProject "ReactiveCoreData" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16961C58183AA9FE003D92FB;
+			productRefGroup = 16961C62183AA9FE003D92FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16961C60183AA9FE003D92FB /* ReactiveCoreData */,
+				16961C81183AA9FE003D92FB /* ReactiveCoreDataTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16961C5F183AA9FE003D92FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16961C7D183AA9FE003D92FB /* Images.xcassets in Resources */,
+				16961C6F183AA9FE003D92FB /* InfoPlist.strings in Resources */,
+				16961C78183AA9FE003D92FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16961C80183AA9FE003D92FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16961C8E183AA9FF003D92FB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		074504A989544A36B12B17D7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0DC24B0CEB7A4A918BFAA838 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		22E0AF21359346D58F48F69E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE162E5BD1E54AB88840DA4D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16961C5D183AA9FE003D92FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1621A975183BD4B1008079A2 /* NSPersistentStoreCoordinator+RCDExtensions.m in Sources */,
+				16961C7B183AA9FE003D92FB /* RCDViewController.m in Sources */,
+				16961C75183AA9FE003D92FB /* RCDAppDelegate.m in Sources */,
+				16961C71183AA9FE003D92FB /* main.m in Sources */,
+				1621A978183BD65F008079A2 /* NSFetchedResultsController+RCDExtensions.m in Sources */,
+				1621A97C183BD7A8008079A2 /* NSPersistentStore+RCDExtensions.m in Sources */,
+				1621A973183BD4AC008079A2 /* NSManagedObject+RCDExtensions.m in Sources */,
+				1621A974183BD4AE008079A2 /* NSManagedObjectContext+RCDExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16961C7E183AA9FE003D92FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16961C90183AA9FF003D92FB /* ReactiveCoreDataTests.m in Sources */,
+				1621A97D183BD7A8008079A2 /* NSPersistentStore+RCDExtensions.m in Sources */,
+				1621A979183BD65F008079A2 /* NSFetchedResultsController+RCDExtensions.m in Sources */,
+				1621A96F183BB82F008079A2 /* NSManagedObject+RCDExtensions.m in Sources */,
+				1621A972183BBE4E008079A2 /* NSPersistentStoreCoordinator+RCDExtensions.m in Sources */,
+				16961C9D183AAD6F003D92FB /* NSManagedObjectContext+RCDExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16961C88183AA9FE003D92FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16961C60183AA9FE003D92FB /* ReactiveCoreData */;
+			targetProxy = 16961C87183AA9FE003D92FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		16961C6D183AA9FE003D92FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16961C6E183AA9FE003D92FB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		16961C76183AA9FE003D92FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16961C77183AA9FE003D92FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		16961C8C183AA9FF003D92FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16961C8D183AA9FF003D92FB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16961C91183AA9FF003D92FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		16961C92183AA9FF003D92FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16961C94183AA9FF003D92FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C39ACCF1B6B4F5DB3DB8AD6 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReactiveCoreData/ReactiveCoreData-Prefix.pch";
+				INFOPLIST_FILE = "ReactiveCoreData/ReactiveCoreData-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		16961C95183AA9FF003D92FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C39ACCF1B6B4F5DB3DB8AD6 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReactiveCoreData/ReactiveCoreData-Prefix.pch";
+				INFOPLIST_FILE = "ReactiveCoreData/ReactiveCoreData-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		16961C97183AA9FF003D92FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3DFFE167D414A01BC6BBFB4 /* Pods-test.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ReactiveCoreData.app/ReactiveCoreData";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReactiveCoreData/ReactiveCoreData-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ReactiveCoreDataTests/ReactiveCoreDataTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		16961C98183AA9FF003D92FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3DFFE167D414A01BC6BBFB4 /* Pods-test.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ReactiveCoreData.app/ReactiveCoreData";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReactiveCoreData/ReactiveCoreData-Prefix.pch";
+				INFOPLIST_FILE = "ReactiveCoreDataTests/ReactiveCoreDataTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16961C5C183AA9FE003D92FB /* Build configuration list for PBXProject "ReactiveCoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16961C91183AA9FF003D92FB /* Debug */,
+				16961C92183AA9FF003D92FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16961C93183AA9FF003D92FB /* Build configuration list for PBXNativeTarget "ReactiveCoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16961C94183AA9FF003D92FB /* Debug */,
+				16961C95183AA9FF003D92FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16961C96183AA9FF003D92FB /* Build configuration list for PBXNativeTarget "ReactiveCoreDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16961C97183AA9FF003D92FB /* Debug */,
+				16961C98183AA9FF003D92FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16961C59183AA9FE003D92FB /* Project object */;
+}
