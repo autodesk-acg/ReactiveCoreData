@@ -56,6 +56,7 @@
 		1621A977183BD65F008079A2 /* NSFetchedResultsController+RCDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSFetchedResultsController+RCDExtensions.m"; path = "ReactiveCoreData/NSFetchedResultsController+RCDExtensions.m"; sourceTree = SOURCE_ROOT; };
 		1621A97A183BD7A8008079A2 /* NSPersistentStore+RCDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSPersistentStore+RCDExtensions.h"; path = "ReactiveCoreData/NSPersistentStore+RCDExtensions.h"; sourceTree = SOURCE_ROOT; };
 		1621A97B183BD7A8008079A2 /* NSPersistentStore+RCDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSPersistentStore+RCDExtensions.m"; path = "ReactiveCoreData/NSPersistentStore+RCDExtensions.m"; sourceTree = SOURCE_ROOT; };
+		166E4CCA183D0F0B005534D3 /* ReactiveCoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReactiveCoreData.h; path = ReactiveCoreData/ReactiveCoreData.h; sourceTree = SOURCE_ROOT; };
 		16961C61183AA9FE003D92FB /* ReactiveCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16961C64183AA9FE003D92FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		16961C66183AA9FE003D92FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -185,6 +186,7 @@
 				1621A971183BBE4E008079A2 /* NSPersistentStoreCoordinator+RCDExtensions.m */,
 				16961C8F183AA9FF003D92FB /* ReactiveCoreDataTests.m */,
 				16961C8A183AA9FF003D92FB /* Supporting Files */,
+				166E4CCA183D0F0B005534D3 /* ReactiveCoreData.h */,
 			);
 			path = ReactiveCoreDataTests;
 			sourceTree = "<group>";

@@ -7,10 +7,13 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "ReactiveCoreData.h"
+
 
 @interface ReactiveCoreDataTests : XCTestCase
 
 @end
+
 
 @implementation ReactiveCoreDataTests
 
