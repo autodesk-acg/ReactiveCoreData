@@ -1,11 +1,3 @@
-#
-#  Be sure to run `pod spec lint ReactiveCoreData.podspec' to ensure this is a
-#  valid spec and to remove all comments including this before submitting the spec.
-#
-#  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
-#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
-#
-
 Pod::Spec.new do |s|
 
   s.name         = "ReactiveCoreData"
@@ -13,7 +5,9 @@ Pod::Spec.new do |s|
   s.summary      = "Reactive extensions for Apple Core Data classes."
 
   s.description  = <<-DESC
-                   ReactiveCocoa extensions for Core Data.
+                   ReactiveCocoa extensions for Apple Core Data classes.
+                   Provides a consistent interface for methods that return errors
+                   and utility methods to add observers for Core Data notifications.
                    DESC
 
   s.homepage     = "https://github.com/autodesk-acg/ReactiveCoreData"
