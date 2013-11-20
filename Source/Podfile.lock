@@ -15,7 +15,7 @@ PODS:
 
 DEPENDENCIES:
   - Kiwi (~> 2.2.3)
-  - ReactiveCocoa (~> 2.0)
+  - ReactiveCocoa (~> 2.1.7)
 
 SPEC CHECKSUMS:
   Kiwi: 04c51e880831d291748ec702d42c4101f7eb95c9
