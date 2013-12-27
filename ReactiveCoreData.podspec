@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Source/ReactiveCoreData/*RCDExtensions.{h,m}', 'Source/ReactiveCoreData/ReactiveCoreData.h'
   s.frameworks   = 'CoreData', 'Foundation'
   s.requires_arc = true
-  s.dependency 'ReactiveCocoa', '~> 2.1.7'
+  
+  s.dependency 'ReactiveCocoa', '~> 2.1.8'
 
 end
