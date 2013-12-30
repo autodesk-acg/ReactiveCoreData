@@ -12,13 +12,21 @@ PODS:
   - ReactiveCocoa/Core (2.1.8):
     - ReactiveCocoa/no-arc
   - ReactiveCocoa/no-arc (2.1.8)
+  - ReactiveCoreData (0.0.3):
+    - ReactiveCocoa (~> 2.1.8)
 
 DEPENDENCIES:
   - Kiwi (~> 2.2.3)
   - ReactiveCocoa (~> 2.1.8)
+  - ReactiveCoreData (from `..`)
+
+EXTERNAL SOURCES:
+  ReactiveCoreData:
+    :path: ..
 
 SPEC CHECKSUMS:
   Kiwi: 04c51e880831d291748ec702d42c4101f7eb95c9
   ReactiveCocoa: 0db710a0afa1c627a64470e5c912a3870d4854ae
+  ReactiveCoreData: faaf3fc9d84b6887dd64bda2967108802ee79921
 
 COCOAPODS: 0.29.0

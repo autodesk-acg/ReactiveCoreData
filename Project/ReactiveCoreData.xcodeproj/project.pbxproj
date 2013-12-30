@@ -8,16 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		168E9B9AF4884D6A81B8FDAA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F56A2454B054E77BEBFC610 /* libPods.a */; };
-		1694D7351870C34F00459EBB /* NSFetchedResultsController+RCDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1694D72B1870C34F00459EBB /* NSFetchedResultsController+RCDExtensions.m */; };
-		1694D7361870C34F00459EBB /* NSFetchedResultsController+RCDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1694D72B1870C34F00459EBB /* NSFetchedResultsController+RCDExtensions.m */; };
-		1694D7371870C34F00459EBB /* NSManagedObject+RCDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1694D72D1870C34F00459EBB /* NSManagedObject+RCDExtensions.m */; };
-		1694D7381870C34F00459EBB /* NSManagedObject+RCDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1694D72D1870C34F00459EBB /* NSManagedObject+RCDExtensions.m */; };
-		1694D7391870C34F00459EBB /* NSManagedObjectContext+RCDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1694D72F1870C34F00459EBB /* NSManagedObjectContext+RCDExtensions.m */; };
-		1694D73A1870C34F00459EBB /* NSManagedObjectContext+RCDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1694D72F1870C34F00459EBB /* NSManagedObjectContext+RCDExtensions.m */; };
-		1694D73B1870C34F00459EBB /* NSPersistentStore+RCDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1694D7311870C34F00459EBB /* NSPersistentStore+RCDExtensions.m */; };
-		1694D73C1870C34F00459EBB /* NSPersistentStore+RCDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1694D7311870C34F00459EBB /* NSPersistentStore+RCDExtensions.m */; };
-		1694D73D1870C34F00459EBB /* NSPersistentStoreCoordinator+RCDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1694D7331870C34F00459EBB /* NSPersistentStoreCoordinator+RCDExtensions.m */; };
-		1694D73E1870C34F00459EBB /* NSPersistentStoreCoordinator+RCDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1694D7331870C34F00459EBB /* NSPersistentStoreCoordinator+RCDExtensions.m */; };
 		16961C65183AA9FE003D92FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16961C64183AA9FE003D92FB /* Foundation.framework */; };
 		16961C67183AA9FE003D92FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16961C66183AA9FE003D92FB /* CoreGraphics.framework */; };
 		16961C69183AA9FE003D92FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16961C68183AA9FE003D92FB /* UIKit.framework */; };
@@ -48,17 +38,6 @@
 
 /* Begin PBXFileReference section */
 		0C39ACCF1B6B4F5DB3DB8AD6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		1694D72A1870C34F00459EBB /* NSFetchedResultsController+RCDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFetchedResultsController+RCDExtensions.h"; sourceTree = "<group>"; };
-		1694D72B1870C34F00459EBB /* NSFetchedResultsController+RCDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFetchedResultsController+RCDExtensions.m"; sourceTree = "<group>"; };
-		1694D72C1870C34F00459EBB /* NSManagedObject+RCDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+RCDExtensions.h"; sourceTree = "<group>"; };
-		1694D72D1870C34F00459EBB /* NSManagedObject+RCDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+RCDExtensions.m"; sourceTree = "<group>"; };
-		1694D72E1870C34F00459EBB /* NSManagedObjectContext+RCDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+RCDExtensions.h"; sourceTree = "<group>"; };
-		1694D72F1870C34F00459EBB /* NSManagedObjectContext+RCDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+RCDExtensions.m"; sourceTree = "<group>"; };
-		1694D7301870C34F00459EBB /* NSPersistentStore+RCDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSPersistentStore+RCDExtensions.h"; sourceTree = "<group>"; };
-		1694D7311870C34F00459EBB /* NSPersistentStore+RCDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSPersistentStore+RCDExtensions.m"; sourceTree = "<group>"; };
-		1694D7321870C34F00459EBB /* NSPersistentStoreCoordinator+RCDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSPersistentStoreCoordinator+RCDExtensions.h"; sourceTree = "<group>"; };
-		1694D7331870C34F00459EBB /* NSPersistentStoreCoordinator+RCDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSPersistentStoreCoordinator+RCDExtensions.m"; sourceTree = "<group>"; };
-		1694D7341870C34F00459EBB /* ReactiveCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactiveCoreData.h; sourceTree = "<group>"; };
 		16961C61183AA9FE003D92FB /* ReactiveCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16961C64183AA9FE003D92FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		16961C66183AA9FE003D92FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -111,28 +90,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1694D7291870C33C00459EBB /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				1694D72A1870C34F00459EBB /* NSFetchedResultsController+RCDExtensions.h */,
-				1694D72B1870C34F00459EBB /* NSFetchedResultsController+RCDExtensions.m */,
-				1694D72C1870C34F00459EBB /* NSManagedObject+RCDExtensions.h */,
-				1694D72D1870C34F00459EBB /* NSManagedObject+RCDExtensions.m */,
-				1694D72E1870C34F00459EBB /* NSManagedObjectContext+RCDExtensions.h */,
-				1694D72F1870C34F00459EBB /* NSManagedObjectContext+RCDExtensions.m */,
-				1694D7301870C34F00459EBB /* NSPersistentStore+RCDExtensions.h */,
-				1694D7311870C34F00459EBB /* NSPersistentStore+RCDExtensions.m */,
-				1694D7321870C34F00459EBB /* NSPersistentStoreCoordinator+RCDExtensions.h */,
-				1694D7331870C34F00459EBB /* NSPersistentStoreCoordinator+RCDExtensions.m */,
-				1694D7341870C34F00459EBB /* ReactiveCoreData.h */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
 		16961C58183AA9FE003D92FB = {
 			isa = PBXGroup;
 			children = (
-				1694D7291870C33C00459EBB /* Classes */,
 				16961C6A183AA9FE003D92FB /* ReactiveCoreData */,
 				16961C89183AA9FE003D92FB /* ReactiveCoreDataTests */,
 				16961C63183AA9FE003D92FB /* Frameworks */,
@@ -373,14 +333,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1694D73B1870C34F00459EBB /* NSPersistentStore+RCDExtensions.m in Sources */,
 				16961C7B183AA9FE003D92FB /* RCDViewController.m in Sources */,
-				1694D7391870C34F00459EBB /* NSManagedObjectContext+RCDExtensions.m in Sources */,
-				1694D7371870C34F00459EBB /* NSManagedObject+RCDExtensions.m in Sources */,
 				16961C75183AA9FE003D92FB /* RCDAppDelegate.m in Sources */,
 				16961C71183AA9FE003D92FB /* main.m in Sources */,
-				1694D73D1870C34F00459EBB /* NSPersistentStoreCoordinator+RCDExtensions.m in Sources */,
-				1694D7351870C34F00459EBB /* NSFetchedResultsController+RCDExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,12 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1694D73E1870C34F00459EBB /* NSPersistentStoreCoordinator+RCDExtensions.m in Sources */,
 				16961C90183AA9FF003D92FB /* ReactiveCoreDataTests.m in Sources */,
-				1694D7381870C34F00459EBB /* NSManagedObject+RCDExtensions.m in Sources */,
-				1694D73C1870C34F00459EBB /* NSPersistentStore+RCDExtensions.m in Sources */,
-				1694D7361870C34F00459EBB /* NSFetchedResultsController+RCDExtensions.m in Sources */,
-				1694D73A1870C34F00459EBB /* NSManagedObjectContext+RCDExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

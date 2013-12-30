@@ -6,3 +6,5 @@ target :test do
   link_with 'ReactiveCoreDataTests'
   pod 'Kiwi', '~> 2.2.3'
 end
+
+pod 'ReactiveCoreData', :path => '..'
