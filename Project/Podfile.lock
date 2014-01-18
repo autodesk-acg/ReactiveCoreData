@@ -12,13 +12,19 @@ PODS:
   - ReactiveCocoa/Core (2.1.8):
     - ReactiveCocoa/no-arc
   - ReactiveCocoa/no-arc (2.1.8)
+  - ReactiveCoreData (0.0.4):
+    - ReactiveCocoa (~> 2.1.8)
+    - ReactiveCoreData/iOS
+    - ReactiveCoreData/OSX
   - ReactiveCoreData/iOS (0.0.4):
+    - ReactiveCocoa (~> 2.1.8)
+  - ReactiveCoreData/OSX (0.0.4):
     - ReactiveCocoa (~> 2.1.8)
 
 DEPENDENCIES:
   - Kiwi (~> 2.2.3)
   - ReactiveCocoa (~> 2.1.8)
-  - ReactiveCoreData/iOS (from `..`)
+  - ReactiveCoreData (from `..`)
 
 EXTERNAL SOURCES:
   ReactiveCoreData:

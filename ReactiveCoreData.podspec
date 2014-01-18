@@ -17,17 +17,11 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.7'
   s.source       = { :git => "https://github.com/autodesk-acg/ReactiveCoreData.git", :tag => "0.0.4" }
   s.source_files = 'Classes/**/*.{h,m}'
+  s.ios.exclude_files = 'Classes/osx/**/*.{h,m}'
+  s.osx.exclude_files = 'Classes/ios/**/*.{h,m}'
   s.frameworks   = 'CoreData', 'Foundation'
   s.requires_arc = true
   
   s.dependency 'ReactiveCocoa', '~> 2.1.8'
-
-  s.subspec 'OSX' do |sp|
-    sp.osx.exclude_files = 'Classes/ios/**/*.{h,m}'
-  end
-
-  s.subspec 'iOS' do |sp|
-    sp.ios.exclude_files = 'Classes/osx/**/*.{h,m}'
-  end
 
 end
