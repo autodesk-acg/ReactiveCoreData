@@ -1,29 +1,18 @@
 PODS:
-  - Kiwi (2.2.3):
-    - Kiwi/SenTestingKit
-  - Kiwi/ARC (2.2.3)
-  - Kiwi/NonARC (2.2.3)
-  - Kiwi/SenTestingKit (2.2.3):
-    - Kiwi/ARC
-    - Kiwi/NonARC
-  - ReactiveCocoa (2.1.8):
+  - Kiwi (2.3.0)
+  - ReactiveCocoa (2.3.1):
+    - ReactiveCocoa/UI
+  - ReactiveCocoa/Core (2.3.1):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.3.1)
+  - ReactiveCocoa/UI (2.3.1):
     - ReactiveCocoa/Core
-    - ReactiveCocoa/no-arc
-  - ReactiveCocoa/Core (2.1.8):
-    - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.1.8)
-  - ReactiveCoreData (0.0.4):
-    - ReactiveCocoa (~> 2.1.8)
-    - ReactiveCoreData/iOS
-    - ReactiveCoreData/OSX
-  - ReactiveCoreData/iOS (0.0.4):
-    - ReactiveCocoa (~> 2.1.8)
-  - ReactiveCoreData/OSX (0.0.4):
-    - ReactiveCocoa (~> 2.1.8)
+  - ReactiveCoreData (0.0.5):
+    - ReactiveCocoa (~> 2.3.1)
 
 DEPENDENCIES:
-  - Kiwi (~> 2.2.3)
-  - ReactiveCocoa (~> 2.1.8)
+  - Kiwi (~> 2.3.0)
+  - ReactiveCocoa (~> 2.3.1)
   - ReactiveCoreData (from `..`)
 
 EXTERNAL SOURCES:
@@ -31,8 +20,8 @@ EXTERNAL SOURCES:
     :path: ..
 
 SPEC CHECKSUMS:
-  Kiwi: 04c51e880831d291748ec702d42c4101f7eb95c9
-  ReactiveCocoa: 0db710a0afa1c627a64470e5c912a3870d4854ae
-  ReactiveCoreData: 0085386cd5d3d5887810478ab6e8a08cb0611c4d
+  Kiwi: 54bece5b35564d9b8e03c608d926f1a22fcfc589
+  ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
+  ReactiveCoreData: 796fb1914de85eb0d524105e37b0c68faa138458
 
-COCOAPODS: 0.29.0
+COCOAPODS: 0.33.1

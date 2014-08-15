@@ -52,6 +52,7 @@
         } else {
             [subscriber sendError:error];
         }
+        return nil;
     }];
 }
 
@@ -67,6 +68,7 @@
         } else {
             [subscriber sendError:error];
         }
+        return nil;
     }];
 }
 

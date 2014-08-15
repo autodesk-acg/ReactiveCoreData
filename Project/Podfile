@@ -1,10 +1,10 @@
 platform :ios, '6.0'
 
-pod 'ReactiveCocoa', '~> 2.1.8'
+pod 'ReactiveCocoa', '~> 2.3.1'
 
 target :test do
   link_with 'ReactiveCoreDataTests'
-  pod 'Kiwi', '~> 2.2.3'
+  pod 'Kiwi', '~> 2.3.0'
 end
 
 pod 'ReactiveCoreData', :path => '..'
