@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ReactiveCoreData"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "Reactive extensions for Apple Core Data classes."
 
   s.description  = <<-DESC
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.author       = { "Kent Wong" => "kent.wong@autodesk.com" }
   s.ios.deployment_target = '6.0'
   s.osx.deployment_target = '10.7'
-  s.source       = { :git => "https://github.com/autodesk-acg/ReactiveCoreData.git", :tag => "0.0.5" }
+  s.source       = { :git => "https://github.com/autodesk-acg/ReactiveCoreData.git", :tag => "0.0.6" }
   s.source_files = 'Classes/**/*.{h,m}'
   s.ios.exclude_files = 'Classes/osx/**/*.{h,m}'
   s.osx.exclude_files = 'Classes/ios/**/*.{h,m}'
