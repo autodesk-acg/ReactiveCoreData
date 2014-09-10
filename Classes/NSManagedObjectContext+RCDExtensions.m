@@ -31,14 +31,25 @@
     @weakify(self);
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         @strongify(self);
-        NSError *error;
-        NSUInteger count = [self countForFetchRequest:request error:&error];
-        if (error) {
-            [subscriber sendError:error];
+        
+        void (^operation)(void) = ^{
+            @strongify(self);
+            NSError *error;
+            NSUInteger count = [self countForFetchRequest:request error:&error];
+            if (error) {
+                [subscriber sendError:error];
+            } else {
+                [subscriber sendNext:@(count)];
+                [subscriber sendCompleted];
+            }
+        };
+        
+        if (NSPrivateQueueConcurrencyType == self.concurrencyType || NSMainQueueConcurrencyType == self.concurrencyType) {
+            [self performBlock:operation];
         } else {
-            [subscriber sendNext:@(count)];
-            [subscriber sendCompleted];
+            operation();
         }
+        
         return nil;
     }];
 }
@@ -48,14 +59,25 @@
     @weakify(self);
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         @strongify(self);
-        NSError *error;
-        NSArray *array = [self executeFetchRequest:request error:&error];
-        if (error) {
-            [subscriber sendError:error];
+        
+        void (^operation)(void) = ^{
+            @strongify(self);
+            NSError *error;
+            NSArray *array = [self executeFetchRequest:request error:&error];
+            if (error) {
+                [subscriber sendError:error];
+            } else {
+                [subscriber sendNext:array];
+                [subscriber sendCompleted];
+            }
+        };
+        
+        if (NSPrivateQueueConcurrencyType == self.concurrencyType || NSMainQueueConcurrencyType == self.concurrencyType) {
+            [self performBlock:operation];
         } else {
-            [subscriber sendNext:array];
-            [subscriber sendCompleted];
+            operation();
         }
+        
         return nil;
     }];
 }
@@ -65,14 +87,25 @@
     @weakify(self);
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         @strongify(self);
-        NSError *error;
-        NSManagedObject *object = [self existingObjectWithID:objectID error:&error];
-        if (error) {
-            [subscriber sendError:error];
+        
+        void (^operation)(void) = ^{
+            @strongify(self);
+            NSError *error;
+            NSManagedObject *object = [self existingObjectWithID:objectID error:&error];
+            if (error) {
+                [subscriber sendError:error];
+            } else {
+                [subscriber sendNext:object];
+                [subscriber sendCompleted];
+            }
+        };
+        
+        if (NSPrivateQueueConcurrencyType == self.concurrencyType || NSMainQueueConcurrencyType == self.concurrencyType) {
+            [self performBlock:operation];
         } else {
-            [subscriber sendNext:object];
-            [subscriber sendCompleted];
+            operation();
         }
+        
         return nil;
     }];
 }
@@ -82,14 +115,25 @@
     @weakify(self);
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         @strongify(self);
-        NSError *error;
-        BOOL result = [self obtainPermanentIDsForObjects:objects error:&error];
-        if (error) {
-            [subscriber sendError:error];
+        
+        void (^operation)(void) = ^{
+            @strongify(self);
+            NSError *error;
+            BOOL wasSuccessful = [self obtainPermanentIDsForObjects:objects error:&error];
+            if (error) {
+                [subscriber sendError:error];
+            } else {
+                [subscriber sendNext:@(wasSuccessful)];
+                [subscriber sendCompleted];
+            }
+        };
+        
+        if (NSPrivateQueueConcurrencyType == self.concurrencyType || NSMainQueueConcurrencyType == self.concurrencyType) {
+            [self performBlock:operation];
         } else {
-            [subscriber sendNext:@(result)];
-            [subscriber sendCompleted];
+            operation();
         }
+        
         return nil;
     }];
 }
@@ -99,12 +143,23 @@
     @weakify(self);
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         @strongify(self);
-        NSError *error;
-        if ([self save:&error]) {
-            [subscriber sendCompleted];
+        
+        void (^operation)(void) = ^{
+            @strongify(self);
+            NSError *error;
+            if ([self save:&error]) {
+                [subscriber sendCompleted];
+            } else {
+                [subscriber sendError:error];
+            }
+        };
+        
+        if (NSPrivateQueueConcurrencyType == self.concurrencyType || NSMainQueueConcurrencyType == self.concurrencyType) {
+            [self performBlock:operation];
         } else {
-            [subscriber sendError:error];
+            operation();
         }
+        
         return nil;
     }];
 }
