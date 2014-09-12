@@ -146,11 +146,15 @@
         
         void (^operation)(void) = ^{
             @strongify(self);
-            NSError *error;
-            if ([self save:&error]) {
-                [subscriber sendCompleted];
+            if ([self hasChanges]) {
+                NSError *error;
+                if ([self save:&error]) {
+                    [subscriber sendCompleted];
+                } else {
+                    [subscriber sendError:error];
+                }
             } else {
-                [subscriber sendError:error];
+                [subscriber sendCompleted];
             }
         };
         
