@@ -1,5 +1,5 @@
 /********************************************************************
- * (C) Copyright 2013 by Autodesk, Inc. All Rights Reserved. By using
+ * (C) Copyright 2014 by Autodesk, Inc. All Rights Reserved. By using
  * this code,  you  are  agreeing  to the terms and conditions of the
  * License  Agreement  included  in  the documentation for this code.
  * AUTODESK  MAKES  NO  WARRANTIES,  EXPRESS  OR  IMPLIED,  AS TO THE
@@ -15,12 +15,12 @@
  *******************************************************************/
 
 #import <Foundation/Foundation.h>
-#import <CoreData/CoreData.h>
 
-#import "NSFetchedResultsController+RCDExtensions.h"
-#import "NSManagedObject+RCDExtensions.h"
-#import "NSManagedObjectContext+RCDExtensions.h"
-#import "NSPersistentStore+RCDExtensions.h"
-#import "NSPersistentStoreCoordinator+RCDExtensions.h"
 
-#import "NSNotificationCenter+RCDExtensions.h"
+@interface NSNotificationCenter (RCDExtensions)
+
+// This is a patched version of rac_addObserverForName:object: that should protect against
+// disposal of object.
+- (RACSignal *)rcd_addObserverForName:(NSString *)notificationName object:(id)object;
+
+@end

@@ -1,5 +1,5 @@
 /********************************************************************
- * (C) Copyright 2013 by Autodesk, Inc. All Rights Reserved. By using
+ * (C) Copyright 2014 by Autodesk, Inc. All Rights Reserved. By using
  * this code,  you  are  agreeing  to the terms and conditions of the
  * License  Agreement  included  in  the documentation for this code.
  * AUTODESK  MAKES  NO  WARRANTIES,  EXPRESS  OR  IMPLIED,  AS TO THE
@@ -15,12 +15,26 @@
  *******************************************************************/
 
 #import <Foundation/Foundation.h>
-#import <CoreData/CoreData.h>
-
-#import "NSFetchedResultsController+RCDExtensions.h"
-#import "NSManagedObject+RCDExtensions.h"
-#import "NSManagedObjectContext+RCDExtensions.h"
-#import "NSPersistentStore+RCDExtensions.h"
-#import "NSPersistentStoreCoordinator+RCDExtensions.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveCocoa/RACEXTScope.h>
 
 #import "NSNotificationCenter+RCDExtensions.h"
+
+
+@implementation NSNotificationCenter (RCDExtensions)
+
+- (RACSignal *)rcd_addObserverForName:(NSString *)notificationName object:(id)object {
+    @weakify(object);
+    return [[RACSignal createSignal:^(id<RACSubscriber> subscriber) {
+        @strongify(object);
+        id observer = [self addObserverForName:notificationName object:object queue:nil usingBlock:^(NSNotification *note) {
+            [subscriber sendNext:note];
+        }];
+        
+        return [RACDisposable disposableWithBlock:^{
+            [self removeObserver:observer];
+        }];
+    }] setNameWithFormat:@"-rcd_addObserverForName: %@ object: <%@: %p>", notificationName, [object class], object];
+}
+
+@end

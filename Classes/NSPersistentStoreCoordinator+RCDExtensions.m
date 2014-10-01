@@ -16,9 +16,10 @@
 
 #import "NSPersistentStoreCoordinator+RCDExtensions.h"
 
-#import <ReactiveCocoa/NSNotificationCenter+RACSupport.h>
 #import <ReactiveCocoa/RACEXTScope.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
+
+#import "NSNotificationCenter+RCDExtensions.h"
 
 
 @implementation NSPersistentStoreCoordinator (RCDExtensions)
@@ -160,28 +161,28 @@
 - (RACSignal *)rcd_addObserverForPersistentStoreCoordinatorStoresDidChangeNotification
 {
     NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
-    return [notificationCenter rac_addObserverForName:NSPersistentStoreCoordinatorStoresDidChangeNotification
+    return [notificationCenter rcd_addObserverForName:NSPersistentStoreCoordinatorStoresDidChangeNotification
                                                object:self];
 }
 
 - (RACSignal *)rcd_addObserverForPersistentStoreCoordinatorStoresWillChangeNotification
 {
     NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
-    return [notificationCenter rac_addObserverForName:NSPersistentStoreCoordinatorStoresWillChangeNotification
+    return [notificationCenter rcd_addObserverForName:NSPersistentStoreCoordinatorStoresWillChangeNotification
                                                object:self];
 }
 
 - (RACSignal *)rcd_addObserverForPersistentStoreCoordinatorWillRemoveStoreNotification
 {
     NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
-    return [notificationCenter rac_addObserverForName:NSPersistentStoreCoordinatorWillRemoveStoreNotification
+    return [notificationCenter rcd_addObserverForName:NSPersistentStoreCoordinatorWillRemoveStoreNotification
                                                object:self];
 }
 
 - (RACSignal *)rcd_addObserverForPersistentStoreDidImportUbiquitousContentChangesNotification
 {
     NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
-    return [notificationCenter rac_addObserverForName:NSPersistentStoreDidImportUbiquitousContentChangesNotification
+    return [notificationCenter rcd_addObserverForName:NSPersistentStoreDidImportUbiquitousContentChangesNotification
                                                object:self];
 }
 

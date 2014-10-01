@@ -16,10 +16,10 @@
 
 #import "NSManagedObjectContext+RCDExtensions.h"
 
-#import <ReactiveCocoa/NSNotificationCenter+RACSupport.h>
 #import <ReactiveCocoa/RACEXTScope.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
+#import "NSNotificationCenter+RCDExtensions.h"
 
 
 @implementation NSManagedObjectContext (RCDExtensions)
@@ -173,21 +173,21 @@
 - (RACSignal *)rcd_addObserverForObjectsDidChangeNotification
 {
     NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
-    return [notificationCenter rac_addObserverForName:NSManagedObjectContextObjectsDidChangeNotification
+    return [notificationCenter rcd_addObserverForName:NSManagedObjectContextObjectsDidChangeNotification
                                                object:self];
 }
 
 - (RACSignal *)rcd_addObserverForDidSaveNotification
 {
     NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
-    return [notificationCenter rac_addObserverForName:NSManagedObjectContextDidSaveNotification
+    return [notificationCenter rcd_addObserverForName:NSManagedObjectContextDidSaveNotification
                                                object:self];
 }
 
 - (RACSignal *)rcd_addObserverForWillSaveNotification
 {
     NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
-    return [notificationCenter rac_addObserverForName:NSManagedObjectContextWillSaveNotification
+    return [notificationCenter rcd_addObserverForName:NSManagedObjectContextWillSaveNotification
                                                object:self];
 }
 
