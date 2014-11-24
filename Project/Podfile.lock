@@ -1,27 +1,27 @@
 PODS:
-  - Kiwi (2.3.0)
+  - ACGReactiveCoreData (0.0.8):
+    - ReactiveCocoa (~> 2.3.1)
+  - Kiwi (2.3.1)
   - ReactiveCocoa (2.3.1):
-    - ReactiveCocoa/UI
+    - ReactiveCocoa/UI (= 2.3.1)
   - ReactiveCocoa/Core (2.3.1):
     - ReactiveCocoa/no-arc
   - ReactiveCocoa/no-arc (2.3.1)
   - ReactiveCocoa/UI (2.3.1):
     - ReactiveCocoa/Core
-  - ReactiveCoreData (0.0.5):
-    - ReactiveCocoa (~> 2.3.1)
 
 DEPENDENCIES:
+  - ACGReactiveCoreData (from `..`)
   - Kiwi (~> 2.3.0)
   - ReactiveCocoa (~> 2.3.1)
-  - ReactiveCoreData (from `..`)
 
 EXTERNAL SOURCES:
-  ReactiveCoreData:
+  ACGReactiveCoreData:
     :path: ..
 
 SPEC CHECKSUMS:
-  Kiwi: 54bece5b35564d9b8e03c608d926f1a22fcfc589
+  ACGReactiveCoreData: 6b4313be734b1b04144070f2dda82ebc26f0d56b
+  Kiwi: 73e1400209055ee9c8ba78c6012b6b642d0fb9f7
   ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
-  ReactiveCoreData: 796fb1914de85eb0d524105e37b0c68faa138458
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.35.0

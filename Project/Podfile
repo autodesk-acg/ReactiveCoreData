@@ -7,4 +7,4 @@ target :test do
   pod 'Kiwi', '~> 2.3.0'
 end
 
-pod 'ReactiveCoreData', :path => '..'
+pod 'ACGReactiveCoreData', :path => '..'
